@@ -45,6 +45,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.txbBorrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,11 +193,22 @@
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // txbBorrar
+            // 
+            this.txbBorrar.Location = new System.Drawing.Point(459, 456);
+            this.txbBorrar.Name = "txbBorrar";
+            this.txbBorrar.Size = new System.Drawing.Size(75, 21);
+            this.txbBorrar.TabIndex = 17;
+            this.txbBorrar.Text = "Borrar";
+            this.txbBorrar.UseVisualStyleBackColor = true;
+            this.txbBorrar.Click += new System.EventHandler(this.txbBorrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1310, 718);
+            this.Controls.Add(this.txbBorrar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnInsertar);
             this.Controls.Add(this.txbAddress);
@@ -242,6 +254,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button txbBorrar;
     }
 }
 

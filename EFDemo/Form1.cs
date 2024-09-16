@@ -70,10 +70,18 @@ namespace EFDemo
             var cliente = crearCliente();
             cr.UpdateCliente(cliente);
            var resultado = cr.ObtenerPorID(cliente.CustomerID);
-            List<Customers> lista1 = new List<Customers>{ resultado
+          
+            if ( resultado != null) {
+                List<Customers> lista1 = new List<Customers>{ resultado
              };
-            dgvCustomers.DataSource = lista1;
+                dgvCustomers.DataSource = lista1;
+            }
+        }
 
+        private void txbBorrar_Click(object sender, EventArgs e)
+        {
+            var eliminadas = cr.DeleteCliente(txbCustomerID.Text);
+            MessageBox.Show($"Se elimino {eliminadas} filas");
         }
     }
 }
